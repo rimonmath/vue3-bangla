@@ -1,18 +1,30 @@
 <template>
   <div class="contact-details">
     <h1 class="contact-heading">Contact Details</h1>
-    <p><strong> Name:</strong>{{ name }}</p>
-    <p><strong> Website:</strong> www.rimonbd.com</p>
-    <p><strong> Address:</strong> Dhaka, Bangladesh</p>
+    <p><strong> Name: </strong> {{ name }}</p>
+    <p><strong> Website: </strong> {{ websiteAddress }}</p>
+    <p><strong> Address: </strong> {{ address }}</p>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    name: {
+      type: String
+    },
+    websiteAddress: {
+      type: String,
+      required: false,
+      default: "http://yourwebsite.com"
+    },
+    address: {
+      type: String,
+      required: true
+    }
+  },
   data() {
-    return {
-      name: "Mamunur Rashid"
-    };
+    return {};
   }
 };
 </script>
