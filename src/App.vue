@@ -13,21 +13,9 @@
       </template>
     </the-card>
 
-    <the-card cardTitle="Apple iPhone 12 Pro">
+    <the-card cardTitle="Website">
       <template #default>
-        <img
-          src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg"
-          alt=""
-        />
-        <p>
-          Versions: A2407 (International); A2341 (USA); A2406 (Canada, Japan);
-          A2408 (China, Hong Kong)
-        </p>
-      </template>
-
-      <template #footer>
-        <button>Buy Now</button>
-        <button>Add to Cart</button>
+        <p>www.rimonbd.com</p>
       </template>
     </the-card>
   </div>

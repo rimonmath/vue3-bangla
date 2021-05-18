@@ -9,16 +9,17 @@
       </slot>
     </div>
 
-    <div class="the-card__footer">
-      <slot name="footer">
-        Default footer
-      </slot>
+    <div class="the-card__footer" v-if="$slots.footer">
+      <slot name="footer"> </slot>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  mounted() {
+    console.log(this.$slots.footer);
+  },
   props: ["cardTitle"]
 };
 </script>
